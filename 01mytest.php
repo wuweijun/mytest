@@ -29,6 +29,32 @@
 	//访问成员方法
 	echo $Buyer1->ShowClassName();
 
+	/**
+	 * 
+	 */
+	class Person 
+	{
+		private $name;
+		protected $age;
+		protected $money;
+		const PI = 3.14;
+		
+		//构造方法初始化属性。低版本
+		function __construct($m)
+		{
+			echo __CLASS__;
+			$this->money = $m;
+		}
+	}
+
+	$Person1 = new Person(100);
+	var_dump($Person1); //查看数据
+
+	echo '<hr/>';
+	//类访问类常量用::
+	echo Person::PI; 
+
+
 
 
 	
