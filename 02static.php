@@ -23,4 +23,8 @@
 	Person::showCount(); //调用静态方法
 
 
+	
+	
+
+
  ?>

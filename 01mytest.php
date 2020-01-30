@@ -7,6 +7,7 @@
 		
 		public $name;
 		public $money = 0;
+
 		public function ShowClassName()
 		{
 			echo __CLASS__;
@@ -18,7 +19,7 @@
 	//var_dump($Buyer1);
 	
 	//访问属性（数据）
-	echo $Buyer1->money;
+	echo $Buyer1->money = 20;
 
 	//修改属性（数据）
 	$Buyer1->name = '吴伟俊';
@@ -28,6 +29,10 @@
 
 	//访问成员方法
 	echo $Buyer1->ShowClassName();
+
+
+
+
 
 	/**
 	 * 
